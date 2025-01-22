@@ -1,4 +1,6 @@
+import 'package:depot_boisson/views/auth/register/register_screen.dart';
 import 'package:depot_boisson/widgets/Logo.dart';
+import 'package:depot_boisson/widgets/footer.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -79,6 +81,11 @@ class _LoginScreenState extends State<LoginScreen> {
               ],
             ),
             ),
+            Footer(buttonText: "Connexion", accountFirstText: "Vous n'avez pas de compte ? ", accountSeconText: " Créez un compte", buttonAction: () {
+              if(formKey.currentState!.validate()){}
+
+            }, 
+            accountActionScreen: RegisterScreen(), height: MediaQuery.sizeOf(context).height  * 0.4, ),
           ],
         ),
       ),
