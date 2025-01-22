@@ -76,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       },
                     )
                   ),
-        
+                  obscureText: !showPass,
                 ),
               ],
             ),
