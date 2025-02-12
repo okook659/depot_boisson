@@ -74,6 +74,7 @@ class _FooterState extends State<Footer> {
                 widget.buttonText,
                 style: TextStyle(fontSize: 20, color: Colors.white),
               ),
+              
             ),
           ),
         ],
